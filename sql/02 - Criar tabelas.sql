@@ -1,0 +1,17 @@
+USE DbApiExemploAutenticacao
+GO
+CREATE TABLE dbo.Produtos
+	(
+	Codigo varchar(30) NOT NULL,
+	Descricao varchar(150) NOT NULL,
+	Preco float(53) NOT NULL
+	)  ON [PRIMARY]
+GO
+ALTER TABLE dbo.Produtos ADD CONSTRAINT
+	PK_Produtos PRIMARY KEY CLUSTERED 
+	(
+	Codigo
+	) WITH( STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+
+GO
+ALTER TABLE dbo.Produtos SET (LOCK_ESCALATION = TABLE)

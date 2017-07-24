@@ -1,0 +1,37 @@
+<h3>Catálogo de Produtos</h3>
+
+
+<div>
+  <button md-button (click)="listarProdutos()">Atualizar Lista</button>
+  <button md-button (click)="sair()" style="float: right;">Sair</button>
+</div>
+
+<div class="mat-elevation-z8">
+
+  <md-table #table [dataSource]="dataSource">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+     <!--ID Column -->
+    <ng-container cdkColumnDef="codigo">
+      <md-header-cell *cdkHeaderCellDef> Código </md-header-cell>
+      <md-cell *cdkCellDef="let row"> {{row.codigo}} </md-cell>
+    </ng-container>
+
+    <!-- Progress Column -->
+    <ng-container cdkColumnDef="descricao">
+      <md-header-cell *cdkHeaderCellDef> Descrição </md-header-cell>
+      <md-cell *cdkCellDef="let row"> {{row.descricao}} </md-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container cdkColumnDef="preco">
+      <md-header-cell *cdkHeaderCellDef> Preço </md-header-cell>
+      <md-cell *cdkCellDef="let row">R$ {{row.preco}} </md-cell>
+    </ng-container>
+
+    <md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+    <md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+  </md-table>
+</div>

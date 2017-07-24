@@ -1,0 +1,12 @@
+﻿1 - Executar o comando Scaffold-DbContext
+
+      Scaffold-DbContext "<string conexão>" Microsoft.EntityFrameworkCore.SqlServer -Project Erp.Repositorio -OutputDir DataModels -Context RepositorioContext -Force
+
+      Scaffold-DbContext "Server=.\SQL2012;Initial Catalog=DbApiExemploAutenticacao;Persist Security Info=False;User ID=sa;Password=1;MultipleActiveResultSets=False;Connection Timeout=30;"  Microsoft.EntityFrameworkCore.SqlServer -Project ApiExemploAutenticacao -OutputDir Repositorios -Context RepositorioContext -Force
+
+2 - Entrar no arquivo Repositorios\RepositorioContext excluir o método: OnConfiguring
+
+
+Obs.: 
+
+Se ocorrer o erro "Project 'Default' is not found", reinicie o Visual Studio
