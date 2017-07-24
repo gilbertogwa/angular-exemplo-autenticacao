@@ -18,10 +18,16 @@ Angular e ASP.NET CORE. Neste
 2. No arquivo **appsettings.json**, configure a conexão com o banco de dados
 3. Execute o projeto
 
-### Web
+### Web 
+
+> Para este projeto você precisa ter instalado o NodeJs (versão min 4) e Angular CLI
+>> Se não tiver o NodeJS, baixe-o através do site http://nodejs.org/
+
+>> Caso não tenha o Angular CLI (depende do NodeJS), você pode instalá-lo 
+>> executando do comando **npm install -g @angular/cli** 
 
 1. Dentro da pasta web, execute o comando **npm install**
-3. Após a conclusão, execute o comando **ng serve**
+2. Após a conclusão, execute o comando **ng serve**
 
-Para navegar no projeto, use a URL `http://localhost:4200/`
+Para navegar no site use a URL `http://localhost:4200/`
 
