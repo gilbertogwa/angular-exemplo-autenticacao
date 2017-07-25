@@ -1,7 +1,7 @@
 ## Angular, API .Net Core, Nancy Framework, JWT e Angular Material
 
 Este repositório contém projetos demonstrando soluções de como implementar uma autenticação JWT com
-Angular e ASP.NET CORE. Neste
+Angular e ASP.NET CORE.
 
 ### Instruções para execução em desenvolvimento
 
@@ -9,7 +9,7 @@ Angular e ASP.NET CORE. Neste
 
 #### II. Crie o banco de dados
 
-1. Abra uma conexão com o SQL
+1. Abra uma conexão com o SQL Server (deve ter direito administrativos)
 2. Execute os scripts de criação do banco de dados, tabela e inserts
 
 #### III. Configure e execute a API (Visual Studio 2017)
@@ -24,7 +24,7 @@ Angular e ASP.NET CORE. Neste
 >> Se não tiver o NodeJS, baixe-o através do site http://nodejs.org/
 
 >> Caso não tenha o Angular CLI (depende do NodeJS), você pode instalá-lo 
->> executando do comando **npm install -g @angular/cli** 
+>> executando o comando **npm install -g @angular/cli** 
 
 1. Dentro da pasta web, execute o comando **npm install**
 2. Após a conclusão, execute o comando **ng serve**
