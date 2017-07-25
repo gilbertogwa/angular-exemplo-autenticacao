@@ -3,6 +3,17 @@
 Este repositório contém projetos demonstrando soluções de como implementar uma autenticação JWT com
 Angular e ASP.NET CORE.
 
+### Coisas que você pode aprender com este exemplo?
+
+1. Usar o framework Nancy para criação de APIs REST no .NET Core
+2. Desabilitar o CORS no framework Nancy
+3. Usar o framework AutoFac com Nancy para injeção de dependência
+4. Implementar Autenticação usando JWT no .NET Core
+5. Token com tempo de expiração
+6. Usar o componente Table do angular2-material
+7. Implementar Autenticação JWT no Angular
+8. Proteger um link no Angular
+
 ### Instruções para execução em desenvolvimento
 
 #### I. Baixe este repositório
